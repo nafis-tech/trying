@@ -2,6 +2,10 @@ document.addEventListener("contextmenu", function(e) {
     e.preventDefault();
 })
 
+document.oncontextmenu = () => {
+    alert(Don't try right click")
+    return false
+}
 document.onkeydown = function (e) {
     if (event.keyCode == 123) {
         return false;
